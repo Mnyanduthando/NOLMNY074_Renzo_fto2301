@@ -1,0 +1,161 @@
+body,
+html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+}
+
+/* ===== Aside ====== */
+
+aside {
+  background-color: rgb(241, 241, 241);
+}
+
+/* ===== logo and title ===== */
+
+.logo-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* ===== nav ====== */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5rem 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.nav-button > button {
+  width: 100%;
+  height: 100%;
+}
+
+/* ====== general ===== */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  margin-top: 15vh;
+}
+
+/* ===== main ====== */
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-content {
+  display: grid;
+
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.aside-content {
+  display: grid;
+  grid-template-rows: 1fr;
+
+  bottom: 0;
+  position: sticky;
+  top: 5rem;
+}
+.aside-link:hover {
+  border-radius: 7px;
+  padding: 2px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: whitesmoke;
+}
+
+/* ===== Category ===== */
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: flow;
+  text-align: center;
+  gap: ;
+}
+.col-span-2 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+.row-span-2 {
+  grid-row: 1/3;
+}
+
+.category {
+  padding: px;
+  background-color: rgb(226, 204, 172);
+  margin: 0.25rem;
+}
+.category:hover {
+  background-color: rgb(155, 100, 55);
+  color: white;
+}
+
+button {
+  background-color: rgb(226, 204, 172);
+}
+button:hover {
+  background-color: rgb(155, 100, 55);
+  color: white;
+}
+
+/* ===== Sponsor ====== */
+
+.sponsors {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: repeat(2, 100px);
+
+  gap: 30px;
+
+  text-align: center;
+}
+
+.sponsors > div {
+  background-color: whitesmoke m;
+}
+
+/* ===== Footer ====== */
+
+#footer {
+  background-color: rgb(31, 31, 31);
+  color: white;
+
+  padding: 2rem;
+  text-align: center;
+}
+
+#footer > div {
+  margin-bottom: 2rem;
+}
+
+/* ===== grid modifiers ===== */
+
+.col-span-2 {
+}
+
+.row-span-2 {
+}
